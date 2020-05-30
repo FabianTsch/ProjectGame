@@ -28,6 +28,8 @@
 
 # Project files
 *.cbp
+*.depend
+*.layout
 
 # Executables
 *.exe
