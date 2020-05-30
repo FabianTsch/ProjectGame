@@ -26,6 +26,9 @@
 *.a
 *.lib
 
+# Project files
+*.cbp
+
 # Executables
 *.exe
 *.out
