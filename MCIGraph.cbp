@@ -52,7 +52,6 @@
 		<Unit filename="map_background.csv" />
 		<Unit filename="map_monster.csv" />
 		<Unit filename="map_path.csv" />
-		<Unit filename="mcigraph.hpp" />
 		<Unit filename="mobileObject.cpp" />
 		<Unit filename="mobileObject.h" />
 		<Extensions />
