@@ -39,7 +39,7 @@ int main(int argc, char* argv[]) {
                 draw_map(Objects, c.getx(), c.gety());
 
                 // Routinen Für die Klassen
-                check_shot(KEY_SPACE, c, projectil, 0);
+                check_shot(KEY_SPACE, c, projectil, 4); // Feuerrate festlegen
                 for (auto it = projectil.begin(); it < projectil.end(); ++it) {check_obj(*it, monster, c, move);}
                 for (auto it = monster.begin(); it < monster.end(); ++it) { check_monster(*it, move); };
                 check_movement(KEY_LEFT, KEY_RIGHT, KEY_UP, KEY_DOWN, c, move);
