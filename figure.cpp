@@ -106,8 +106,8 @@ void draw_figure(Figure& f) {
 void spawnPatter(std::vector<Monster*>& m, Hero& c, std::vector<int>& patter) {
     for (size_t i = 0; i < patter.size(); ++i) {
         if (patter.at(i) != -1) {
-            int x = i / 300;
-            int y = i % 300;
+            int y = i / 300;
+            int x = i % 300;
             m.push_back(new Monster(x, y, "monster/ghost_up.bmp",
                 "monster/ghost_down.bmp", "monster/ghost_right.bmp", "monster/ghost_left.bmp", &c));
         }
