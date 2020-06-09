@@ -53,8 +53,10 @@ int main(int argc, char* argv[]) {
                 present();
             }
         // Aufäumen der restlichen Objekte
-        for_each(monster.begin(), monster.end(), []( Monster* m ){delete m;});
-        for_each(projectil.begin(), projectil.end(), [](MobileObject* mo){delete mo;});
+            for(auto it = monster.begin(); it < monster.end(); ++it){delete *it; *it = NULL;};
+            for(auto it = projectil.begin(); it < projectil.end(); ++it){delete *it; *it = NULL;};
+            clean_monster(monster);
+            clean_obj(projectil);
     }
     return 0;
 }
