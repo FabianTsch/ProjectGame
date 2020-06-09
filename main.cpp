@@ -52,6 +52,9 @@ int main(int argc, char* argv[]) {
                 for (auto it = projectil.begin(); it < projectil.end(); ++it) { draw_object(**it); }
                 present();
             }
+        // Aufäumen der restlichen Objekte
+        for_each(monster.begin(), monster.end(), []( Monster* m ){delete m;});
+        for_each(projectil.begin(), projectil.end(), [](MobileObject* mo){delete mo;});
     }
     return 0;
 }
