@@ -32,7 +32,7 @@ void draw_map(std::vector<int>& map, int posx, int posy) {
             case 13:   draw_image("tiles/0_13.bmp", x *16, y*16); break;
             case 14:   draw_image("tiles/0_14.bmp", x *16, y*16); break;
             case 15:   draw_image("tiles/0_15.bmp", x *16, y*16); break;
-            case 16:   draw_image("tiles/0_16.bmp", x *16, y*16); break;
+            case 16:	  draw_image("tiles/0_16.bmp", x *16, y*16); break;
             case 17:   draw_image("tiles/0_17.bmp", x *16, y*16); break;
             case 18:   draw_image("tiles/0_18.bmp", x *16, y*16); break;
             case 19:   draw_image("tiles/0_19.bmp", x *16, y*16); break;
@@ -48,7 +48,7 @@ void draw_map(std::vector<int>& map, int posx, int posy) {
             case 29:   draw_image("tiles/0_29.bmp", x *16, y*16); break;
             case 30:   draw_image("tiles/0_30.bmp", x *16, y*16); break;
             case 31:   draw_image("tiles/1_0.bmp", x *16, y*16); break;
-            case 32:   draw_image("tiles/1_1.bmp", x *16, y*16); break;
+            case 32:	  draw_image("tiles/1_1.bmp", x *16, y*16); break;
             case 33:   draw_image("tiles/1_2.bmp", x *16, y*16); break;
             case 34:   draw_image("tiles/1_3.bmp", x *16, y*16); break;
             case 35:   draw_image("tiles/1_4.bmp", x *16, y*16); break;
