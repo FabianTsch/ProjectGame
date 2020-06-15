@@ -11,6 +11,6 @@
 
 namespace init{
     std::vector<int> loadm(std::string, size_t size_m = 90000);
-}
+}// namespace init
 
 #endif

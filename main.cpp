@@ -3,6 +3,8 @@
 #include "figure.h"
 #include "mobileObject.h"
 #include "map.h"
+#include "cf.hpp"
+#include <memory>
 #include <time.h>
 #include <algorithm>
 
@@ -28,8 +30,9 @@ int main(int argc, char* argv[]) {
         std::vector<Monster*> monster;
         spawnPatter(monster, c, spawnpatter);
         std::vector<MobileObject*> projectil;
+        cf::WGA ag(&c, &monster);
 
-            while (c.gethealth() > 0 && running()) {
+            while (ag.check_running()) {
                 set_delay(33);
 
                 // Zeichnen der Map
@@ -57,6 +60,9 @@ int main(int argc, char* argv[]) {
             for(auto it = projectil.begin(); it < projectil.end(); ++it){delete *it; *it = NULL;};
             clean_monster(monster);
             clean_obj(projectil);
+
+        // Spielende
+        ag.eofg();
     }
     return 0;
 }
