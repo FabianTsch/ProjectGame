@@ -41,7 +41,7 @@ int main(int argc, char* argv[]) {
                 draw_map(Layer1, c.getx(), c.gety());
                 draw_map(Objects, c.getx(), c.gety());
 
-                // Routinen Für die Klassen
+                // Routinen FÃ¼r die Klassen
                 check_shot(KEY_SPACE, c, projectil, 4); // Feuerrate festlegen
                 for (auto it = projectil.begin(); it < projectil.end(); ++it) {check_obj(*it, monster, c, move);}
                 for (auto it = monster.begin(); it < monster.end(); ++it) { check_monster(*it, move); };
@@ -55,7 +55,7 @@ int main(int argc, char* argv[]) {
                 for (auto it = projectil.begin(); it < projectil.end(); ++it) { draw_object(**it); }
                 present();
             }
-        // Aufäumen der restlichen Objekte
+        // AufrÃ¤umen der restlichen Objekte
             for(auto it = monster.begin(); it < monster.end(); ++it){delete *it; *it = NULL;};
             for(auto it = projectil.begin(); it < projectil.end(); ++it){delete *it; *it = NULL;};
             clean_monster(monster);
