@@ -7,6 +7,10 @@
 #include "map.h"
 #include <time.h>
 #include <algorithm>
+#include <string>
+#include <vector>
+#include <string>
+#include <sstream>
 
 namespace cf{
     class WGA{
@@ -19,6 +23,8 @@ namespace cf{
         bool check_running();
         void eofg();
     };
+
+    void draw_monster_number(size_t size);
 }//namespace cf
 
 

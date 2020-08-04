@@ -108,7 +108,7 @@ private:
     _background = {0xEF, 0xEF, 0xEF};
     running = true;
     // Init SDL
-    if (SDL_Init(SDL_INIT_VIDEO) != 0) {
+    if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_AUDIO) != 0) {
       throw MciGraphException("Could not init SDL: " +
                               std::string(SDL_GetError()));
     }
